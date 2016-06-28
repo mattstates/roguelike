@@ -4,7 +4,6 @@ import Character from './Character.js'
 import './screen.sass'
 
 const Screen = function(props) {
-  //console.log(props.playerInfo.level)
   const tiles = props.currentMap.reduce(function(previous, current) {
     return previous.concat(current)
   }, []).map((cell)=> {

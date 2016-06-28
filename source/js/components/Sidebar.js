@@ -8,7 +8,6 @@ import Weapon from './Weapon.js'
 import './sidebar.sass'
 
 const Sidebar = function(props) {
-  //console.log(props, 'sidebar props')
   return (
     <div className="sidebar">
       <h1>Status</h1>

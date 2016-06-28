@@ -7,8 +7,6 @@ const startingPos = randomizer(gameBoard.walkableTiles[0].length)
 
 gameObjects.hero.position = [gameBoard.walkableTiles[0][startingPos].xPos, gameBoard.walkableTiles[0][startingPos].yPos]
 
-
-
 const defaultCharacter = gameObjects.hero;
 /*
   {
@@ -24,12 +22,6 @@ const defaultCharacter = gameObjects.hero;
 */
 
 const defaultGamestate = gameBoard
-/*
-{
-  maps: [firstFloor, secondFloor, thirdFloor, fourthFloor]
-  walkableTiles: [] //filtered maps of tiles where walkable == true.
-}
-*/
 
 const characterReducer = (state = defaultCharacter, action) => {
 
@@ -41,7 +33,6 @@ const characterReducer = (state = defaultCharacter, action) => {
       state = {...state, weapon: action.payload}
       return state
     case 'UPDATE_LIFE':
-    //console.log(state, state.HP, action.payload, 'update life')
       state = {...state, HP: (parseInt(state.HP) + parseInt(action.payload))}
       return state
     case 'UPDATE_DUNGEON_FLOOR':
@@ -57,9 +48,7 @@ const characterReducer = (state = defaultCharacter, action) => {
       state = {...state, level: action.payload}
       return state
     case 'TOGGLE_TORCH':
-      console.log(state, 'from the torch action')
       state = {...state, light: !state.light}
-      console.log(state)
       return state
     default:
       return state
@@ -140,39 +129,6 @@ const reducers = combineReducers({
 
 })
 
-
-
 const store = createStore(reducers)
 
-// window.addEventListener('keydown', function() {
-//   let coords = true
-//   if(coords == true) {
-//     console.log(changeCharacterPosition([30,60]), 'the action object')
-//     store.dispatch( changeCharacterPosition([30,60]) )
-//     console.log(store.getState())
-//   }
-// })
-
-
-/// MODEL OF STORE ///
-// {
-//   character: {
-//     name:
-//     position:
-//     weapon:
-//     HP:
-//     XP:
-//     level:
-//     basePower:
-//   },
-//   gameMap: []
-// }
-
-
-
-
-//console.log(store)
-
-
 export default store
-//export reducers

@@ -6,8 +6,6 @@ import { connect } from 'react-redux'
 import './body.sass'
 
 const Body = function(props) {
-  //console.log(props, 'in the body component')
-  //console.log(props.maps.maps, props.playerInfo, 'in the body component')
   return (
     <div className="body">
       <Screen

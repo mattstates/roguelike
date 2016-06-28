@@ -19,15 +19,11 @@ class App extends React.Component {
   }
 
 handleClick() {
-  //dispatch(toggleTorch)
   this.props.toggleTorch()
-  console.log('div was clicked')
-
 }
   render() {
 
     addEventListener('keydown', moveCharacter)
-    console.log(this.props)
     return (
       <div>
         <Header onClick={this.handleClick} />

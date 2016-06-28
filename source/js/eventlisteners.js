@@ -46,7 +46,6 @@ const sendCoords = (coords, walkable, monsters) => {
 
     tile.tileType = {...tile.tileType, name: 'floor'};
 
-    //console.log(tile);
     // HANDLE WALKING ON WEAPON/CHESTS TILES //
     if (tile.weapon) {
       console.log('you stepped on a weapon')
@@ -72,7 +71,6 @@ const sendCoords = (coords, walkable, monsters) => {
     const enemyAttackDmg = tile.enemy.attack(currentFloor + 1)
     store.dispatch(updateLife(-enemyAttackDmg))
     store.dispatch(updateEnemyLife(currentState.character.basePower, currentFloor, tile.id))
-    //console.log(currentState.character.HP)
     if( currentState.character.HP - enemyAttackDmg <= 0 ) {
       alert(currentState.character.name + ' has fallen. Click "OK" to try again.')
       // --TODO-- REPLACE THIS WITH A REAL STATE RESET SO THE PAGE WILL NOT RELOAD.
@@ -99,10 +97,8 @@ const sendCoords = (coords, walkable, monsters) => {
 
       let updatedTile = {...tile, tileType: { walkable: true, name: 'floor' } }
       delete updatedTile['enemy']
-      //console.log(updatedTile, currentFloor, 'this is the tile being sent to the Change floor tile action')
 
       store.dispatch(changeFloorTile(updatedTile, currentFloor))
-
 
     }
   }
