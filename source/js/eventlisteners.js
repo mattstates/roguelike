@@ -79,7 +79,7 @@ const sendCoords = (coords, walkable, monsters) => {
 
     // HANDLE ENEMY DEATH //
     if( tile.enemy.baseHP <= 0 ) {
-        if(tile.enemy.name === 'Demon') {
+        if(tile.enemy.name === 'Demon' && currentFloor === 3) {
         alert('You are very brave and have guided ' + currentState.character.name + ' to vanquish the evil demonlord. There\'s no music or fanfare, but you can play again by clicking "OK".')
         // --TODO-- REPLACE THIS WITH A REAL STATE RESET SO THE PAGE WILL NOT RELOAD. Also, add music and fanfare.
         document.location.reload(true)
