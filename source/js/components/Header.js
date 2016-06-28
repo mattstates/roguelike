@@ -5,7 +5,7 @@ const Header = function(props) {
   console.log(props)
   return (
     <div className="header">
-      <span onClick={props.onClick}>🔥</span> Roguelike Dungeon Crawl <span onClick={props.onClick}>🔥</span>
+      <span onClick={props.onClick}>🔥</span> Roguelike Dungeon Crawler <span onClick={props.onClick}>🔥</span>
     </div>
   )
 }
