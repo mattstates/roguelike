@@ -3,7 +3,7 @@ import './footer.sass'
 
 const Footer = function() {
   return (
-    <div className="footer">Copyright Matt States 2016</div>
+    <div className="footer">Created by: <a href="http://www.mattstates.com">Matt States</a> See the Source Code at <a href="http://www.github.com/mattstates/roguelike">github.com</a></div>
   )
 }
 
