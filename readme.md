@@ -3,12 +3,15 @@
 
 ----
 
-> This dungeon crawler is the last project for the React.js half of the Data Visualization certificate at [freecodecamp.com](https://www.freecodecamp.com/mattstates).
+This dungeon crawler is the last project for the React.js half of the Data Visualization certificate at [freecodecamp.com](https://www.freecodecamp.com/mattstates).
+
+The frameworks and tools used are:
+**webpack**, **git**, **babel.js**, **react.js**, **redux.js**, **react-redux**, and **sass**.
+
+
 
 ----
 ## How to Play:
-• [mattstates.github.io](http://www.mattstates.github.io) *hosted June 28th, 2016
-
 • Players can use the arrow keys or WASD controls to move your hero through the dungeon.
 
 • The dungeon map can be lit by clicking the flames on the site header.
