@@ -1,0 +1,29 @@
+@import '../../css/global.sass'
+.screen
+  width: 900px
+  height: 600px
+  margin: 0
+  font-size: 0 /*what a hack*/
+  background: rgba(10,10,10,1)
+  padding: 0
+  border: 29px solid $borderColor
+  position: relative
+  display: inline-block
+  overflow: hidden
+
+.item, .heart, .stair, .floor, .wall, .enemy
+  width: 29px
+  height: 29px
+  border-left: 1px solid $lightBorderColor
+  border-top: 1px solid $lightBorderColor
+  background: $floorColor
+  border-radius: 0
+  margin: 0
+  padding: 0
+  display: inline-block
+  color: black;
+
+.wall
+  border-color: $borderColor
+  background: $tileColor
+  border-radius: 3px
