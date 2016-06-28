@@ -14,6 +14,16 @@ The frameworks and tools used are:
 ## How to Play:
 • Players can use the arrow keys or WASD controls to move your hero through the dungeon.
 
+• You can fight enemies by trying to walk through them, but keep an eye on your HP!
+
+• Collect new weapons by taking your chances walking over a treasure chest.
+
+• Health can be replenished by collecting hearts or leveling up.
+
+• Your hero will gain XP by defeating enemies.
+
+• You win when you make it to the fourth level and defeat the demon.
+
 • The dungeon map can be lit by clicking the flames on the site header.
 
 ----
